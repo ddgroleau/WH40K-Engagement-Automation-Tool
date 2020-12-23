@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>WH40K Engagement Automator</title>
+</head>
+
+<body>
+
+    <div class="masterContainer" id="masterContainer">
+    
+    <div class="content">
+    <form> 
+        <h1>WH40K Engagement Automator</h1>
+        <br>
+        <input type="text" id="input6" placeholder="# of Dice">
+        <br>
+        <input type="text" id="input1" placeholder="Ballistic Skill">
+        <br>
+        <input type="text" id="input2" placeholder="Weapon Strength">
+        <br>
+        <input type="text" id="input3" placeholder="Enemy Toughness">
+        <br>
+        <input type="text" id="input4" placeholder="Enemy Save">
+        <br>
+        <input type="text" id="input5" placeholder="Enemy # Wounds">
+        <br>
+        <select class="damageType" name="damageType">
+            <option value=0>Select Damage Type</option>
+            <option value="1">Normal Damage</option>
+            <option value="2">D3 Damage</option>
+            <option value="3">D6 Damage</option>
+        </select>
+        <br>
+       <a href="javascript:window.location.href=window.location.href"><button class="reset" id="reset" value="reset">Reset Instance</button></a>
+    </form>
+    <button class="btn" id="run"><strong>Run</strong></button>
+   </div>
+   
+   <div id="newDiv" class="newDiv" name="newDiv">
+   </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
